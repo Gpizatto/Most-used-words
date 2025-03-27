@@ -1,19 +1,23 @@
 <template>
   <v-app>
-    <v-main>
-      <HelloWorld/>
-    </v-main>
+    <v-app-bar app color="primary" dark>
+      <v-toolbar-title>Most used Words</v-toolbar-title>
+    </v-app-bar>
+    <v-content>
+      <HomeComponent />
+    </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeComponent from './components/Home'; 
 
 export default {
-  name: 'AppComponent',
+  name: "appComponent",
 
   components: {
-    HelloWorld
+    HomeComponent
+
   },
 
   data: () => ({
