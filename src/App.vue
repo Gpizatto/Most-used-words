@@ -1,11 +1,14 @@
 <template>
   <v-app>
+    <v-main>
     <v-app-bar app color="primary" dark>
       <v-toolbar-title>Most used Words</v-toolbar-title>
+      
     </v-app-bar>
-    <v-content>
+    
+   
       <HomeComponent />
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
@@ -15,13 +18,7 @@ import HomeComponent from './components/Home';
 export default {
   name: "appComponent",
 
-  components: {
-    HomeComponent
+  components: {HomeComponent},
 
-  },
-
-  data: () => ({
-    //
-  }),
 }
 </script>
